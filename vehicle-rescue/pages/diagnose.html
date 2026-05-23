@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diagnose – VehicleRescue</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">🔧 VehicleRescue</div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="diagnose.html" class="active">Diagnose</a>
+      <a href="garages.html">Find Garage</a>
+      <a href="about.html">About</a>
+    </div>
+    <button class="nav-sos">🚨 SOS</button>
+  </nav>
+
+  <div class="page-header">
+    <div class="section-label">STEP 1 OF 3</div>
+    <h1>Diagnose Your<br/><span class="accent">Vehicle Problem</span></h1>
+    <p>Select your vehicle type, then pick the problem you're facing.</p>
+  </div>
+
+  <div class="diagnose-section">
+
+    <!-- Step 1: Vehicle Type -->
+    <div class="section-label" style="margin-bottom:12px">SELECT VEHICLE TYPE</div>
+    <div class="vehicle-selector">
+      <button class="v-select-btn active" onclick="selectVehicle('car', this)">
+        <span class="v-emoji">🚗</span>Car / SUV
+      </button>
+      <button class="v-select-btn" onclick="selectVehicle('bike', this)">
+        <span class="v-emoji">🏍️</span>Bike / Scooter
+      </button>
+    </div>
+
+    <!-- Step 2: Fault Selection -->
+    <div class="section-label" style="margin-bottom:12px">SELECT YOUR PROBLEM</div>
+    <div class="fault-grid" id="faultGrid"></div>
+
+    <!-- Step 3: Result -->
+    <div class="result-box" id="resultBox">
+      <div class="section-label">DIAGNOSIS RESULT</div>
+      <h3 id="resultTitle"></h3>
+      <span class="result-severity" id="resultSeverity"></span>
+      <p id="resultDesc"></p>
+      <div class="result-actions">
+        <a href="garages.html" class="btn-garage">🗺️ Find Nearest Garage</a>
+        <button class="btn-sos" onclick="sendSOS()">🚨 Send SOS Alert</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="toast" id="toast">✅ SOS Alert Sent! Garage notified.</div>
+
+  <script src="../js/diagnose.js"></script>
+</body>
+</html>

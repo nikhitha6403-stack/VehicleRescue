@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Find Garage – VehicleRescue</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-logo">🔧 VehicleRescue</div>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="diagnose.html">Diagnose</a>
+      <a href="garages.html" class="active">Find Garage</a>
+      <a href="about.html">About</a>
+    </div>
+    <button class="nav-sos">🚨 SOS</button>
+  </nav>
+
+  <div class="page-header">
+    <div class="section-label">STEP 2 OF 3</div>
+    <h1>Nearest Garages<br/><span class="accent2">Near You</span></h1>
+    <p>Based on your GPS location. Click "Send Alert" to notify a garage instantly.</p>
+  </div>
+
+  <div class="garage-section">
+    <div class="location-bar">
+      <span id="locationText">📍 Detecting your location...</span>
+      <button onclick="getLocation()">🔄 Refresh</button>
+    </div>
+
+    <div class="section-label" style="margin-bottom:16px">TOP 3 GARAGES NEARBY</div>
+    <div class="garage-list" id="garageList"></div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="../js/garages.js"></script>
+</body>
+</html>

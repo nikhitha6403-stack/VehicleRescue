@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VehicleRescue – Smart Breakdown Assistant</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">🔧 VehicleRescue</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/diagnose.html">Diagnose</a>
+      <a href="pages/garages.html">Find Garage</a>
+      <a href="pages/about.html">About</a>
+    </div>
+    <button class="nav-sos" onclick="window.location.href='pages/diagnose.html'">🚨 SOS</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-badge">SMART VEHICLE ASSISTANT</div>
+      <h1>Stranded?<br/><span class="accent">We've Got You.</span></h1>
+      <p>VehicleRescue detects your vehicle problem, explains it in plain language, and finds the nearest garage — instantly. Works for <strong>cars & bikes</strong>.</p>
+      <div class="hero-btns">
+        <a href="pages/diagnose.html" class="btn-primary">🔍 Diagnose My Vehicle</a>
+        <a href="pages/garages.html" class="btn-outline">🗺️ Find Nearest Garage</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">2 min</span><span class="stat-label">Average rescue time</span></div>
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Fault codes explained</span></div>
+        <div class="stat"><span class="stat-num">Cars & Bikes</span><span class="stat-label">Both supported</span></div>
+      </div>
+    </div>
+    <div class="hero-phone">
+      <div class="phone-mockup">
+        <div class="phone-notch"></div>
+        <div class="phone-screen-mini">
+          <div class="mini-status warn">⚠️ Fault Detected</div>
+          <div class="mini-fault">Engine Misfire – P0301</div>
+          <div class="mini-desc">Spark plug issue detected. Don't over-rev.</div>
+          <div class="mini-btn">📍 Find Garage Now</div>
+          <div class="mini-garage">
+            <span>🔧 Kumar Auto</span><span class="dist">0.8 km</span>
+          </div>
+          <div class="mini-garage">
+            <span>🏍️ Singh Bikes</span><span class="dist">1.4 km</span>
+          </div>
+          <div class="mini-sos">🚨 Send SOS Alert</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="section-label">HOW IT WORKS</div>
+    <h2>3 Steps to Safety</h2>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-icon">🔌</div>
+        <h3>Connect or Select</h3>
+        <p>Plug in an OBD2 Bluetooth dongle OR manually pick your vehicle problem from a simple list.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-icon">🔍</div>
+        <h3>Get Diagnosis</h3>
+        <p>The app reads the fault code and explains it in plain language — no confusing technical jargon.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-icon">🗺️</div>
+        <h3>Find & Alert Garage</h3>
+        <p>Instantly see the 3 nearest garages. Send your location + fault details with one tap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VEHICLE TYPES -->
+  <section class="vehicles-section">
+    <div class="section-label">SUPPORTED VEHICLES</div>
+    <h2>Cars & Bikes Both</h2>
+    <div class="vehicle-cards">
+      <div class="vehicle-card">
+        <div class="v-icon">🚗</div>
+        <h3>Cars & SUVs</h3>
+        <p>Any petrol/diesel car made after 2000 with an OBD2 port. Supports 50+ fault codes.</p>
+        <ul>
+          <li>✅ Engine faults</li>
+          <li>✅ Battery issues</li>
+          <li>✅ Transmission alerts</li>
+          <li>✅ ABS / brake warnings</li>
+        </ul>
+      </div>
+      <div class="vehicle-card featured">
+        <div class="v-badge">UNIQUE FEATURE</div>
+        <div class="v-icon">🏍️</div>
+        <h3>Bikes & Scooters</h3>
+        <p>Most apps ignore bikes. VehicleRescue supports all two-wheelers with manual fault selection.</p>
+        <ul>
+          <li>✅ Chain & gear issues</li>
+          <li>✅ Engine overheating</li>
+          <li>✅ Tyre pressure alerts</li>
+          <li>✅ Electrical faults</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">🔧 VehicleRescue</div>
+    <p>Built by a developer who wants to help people stranded on roads.</p>
+    <div class="footer-links">
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+    <p class="footer-copy">© 2025 VehicleRescue. Open Source Project.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
