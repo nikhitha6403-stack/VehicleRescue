@@ -45,7 +45,7 @@ git clone https://github.com/nikhitha6403-stack/VehicleRescue.git
 - [ ] Phase 5 – Mobile app
 
 ## 🤝 Connect
-- LinkedIn: [Your LinkedIn URL here]
+- LinkedIn: [www.linkedin.com/in/nikhitha-ch-5a20722a5]
 - GitHub: [github.com/nikhitha6403-stack](https://github.com/nikhitha6403-stack)
 
 ⭐ **Star this repo if you find it useful!**
